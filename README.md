@@ -30,7 +30,7 @@
 ## 파이널 프로젝트
 ### Eroom(개발자 전용 그룹웨어)
 * 핵심 기술 :
-  - **Backend**: Java 17, Spring Boot 3, Spring MVC, Spring Security, JPA (Hibernate), MyBatis
+  - **Backend**: Java 17, Spring Boot 3, Spring MVC, Spring Security, JPA (Hibernate)
   - **Frontend**: HTML5, CSS3, JavaScript (ES6), Bootstrap 5, Thymeleaf, jQuery
   - **Database**: MariaDB
   - **Authentication**: Spring Security 암호화
