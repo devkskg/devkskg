@@ -36,7 +36,7 @@
   - **Authentication**: Spring Security 암호화
   - **PDF 출력**: Puppeteer (Node.js 기반 HTML to PDF 변환)
   - **배포 환경**: Local Linux server, RDS, Docker, Docker Compose (AWS EC2, RDS, S3, Docker, Docker Compose)
-  - **기타**: WebSocket(실시간 알림), SignaturePad, List.js, SonarCloud, OpenAI GPT API 연동
+  - **기타**: WebSocket(실시간 알림), SignaturePad, List.js, Sortable.js, OpenAI GPT API 연동
 
 - 핵심 기능 :
   - 전자결재 시스템: 결재자·합의자·참조자 설정, 단계별 승인, 웹소켓 실시간 알림, 결재 문서 PDF 출력 지원
