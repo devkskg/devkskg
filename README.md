@@ -38,7 +38,7 @@
   - **배포 환경**: Local Linux server, RDS, Docker, Docker Compose (AWS EC2, RDS, S3, Docker, Docker Compose)
   - **기타**: WebSocket(실시간 알림), SignaturePad, List.js, AOS.js, SonarCloud, OpenAI GPT API 연동
 
-* 핵심 기능 :
+- 핵심 기능 :
   - 전자결재 시스템: 결재자·합의자·참조자 설정, 단계별 승인, 웹소켓 실시간 알림, 결재 문서 PDF 출력 지원
   - 조직도 및 주소록: 트리 구조 조직도에서 사원 선택 및 태그 출력, 부서·팀 실시간 추가/관리 기능 포함
   - GPT 챗봇 기능: 플로팅 버튼으로 챗봇 호출, 업무 보조 및 그룹웨어 기능 위치 안내 + 바로가기 링크 제공
