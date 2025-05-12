@@ -14,10 +14,10 @@
 ### LumoDiem(원데이클래스 예약 웹 서비스)
 * 핵심 기술 :
   - **Backend**: Java 17, Servlet/JSP, EL/JSTL, Tomcat
-  - **Frontend**: HTML5, CSS3, JavaScript (ES6), jQuery, Bootstrap
+  - **Frontend**: HTML5, CSS3, JavaScript (ES6), Bootstrap 5, jQuery
   - **Database**: MariaDB, MyBatis, JDBC
   - **Authentication**: SHA-512 단방향 해시 암호화
-  - **API 연동**: KakaoPay API (실시간 결제 처리), 다음 지도 API
+  - **API & Tool**: Eclipse, HeidiSQL, GitHub, Daum Address API, KAKAOPAY API
 * 핵심 기능 :
   - 회원 관련 기능
       - 회원 가입 기능
