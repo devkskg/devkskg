@@ -13,41 +13,55 @@
 ## 세미 프로젝트
 ### LumoDiem(원데이클래스 예약 웹 서비스)
 * 핵심 기술 :
-  - **Backend**: Java 17, MyBatis, Servlet/JSP, EL/JSTL
+  - **Backend**: Java 17, Servlet/JSP, EL/JSTL, Tomcat
   - **Frontend**: HTML5, CSS3, JavaScript (ES6), jQuery, Bootstrap
-  - **Database**: MariaDB
+  - **Database**: MariaDB, MyBatis, JDBC
   - **Authentication**: SHA-512 단방향 해시 암호화
   - **API 연동**: KakaoPay API (실시간 결제 처리), 다음 지도 API
 * 핵심 기능 :
-  - 클래스 등록/예약/리뷰 기능 제공 (수강자 ↔ 주최자 중심)
-  - 클래스 및 리뷰 게시판 구현 + 검색, 정렬, 좋아요, 신고 기능 포함
-  - 카카오페이 연동을 통한 비동기 결제 처리 기능
-  - 실시간 채팅 기능 (1:1 수강자-주최자 대화)
-  - 회원 유형 선택 (수강자 / 주최자) 및 역할 기반 기능 제공
-  - 마이페이지 기능 (예약 내역 조회, 예약 취소, 리뷰 작성)
-* 주요 코드 : 진짜 코드??
+  - 회원 관련 기능
+      - 회원 가입 기능
+      - 로그인 기능
+      - 회원 탈퇴 기능
+  - 클래스 상세 페이지
+      - 좋아요 등록, 조회, 삭제
+      - 실시간 채팅방(Polling 방식)
+      - 카카오페이 API를 이용한 결제 시스템
+  - 마이페이지
+      - 주최자 마이페이지(주최 클래스 조회, 주최 클래스별 리뷰 조회)
+      - 참여자 마이페이지(수강 클래스 조회, 작성 리뷰 조회)
+      - 공통 기능(좋아요 클래스, 좋아요 리뷰, 작성 댓글 조회)
+
   
 ## 파이널 프로젝트
 ### Eroom(개발자 전용 그룹웨어)
 * 핵심 기술 :
-  - **Backend**: Java 17, Spring Boot 3, Spring MVC, Spring Security, JPA (Hibernate)
+  - **Backend**: Java 17, Spring Boot 3, Spring MVC, Spring Security
   - **Frontend**: HTML5, CSS3, JavaScript (ES6), Bootstrap 5, Thymeleaf, jQuery
   - **Database**: MariaDB
   - **Authentication**: Spring Security 암호화
-  - **PDF 출력**: Puppeteer (Node.js 기반 HTML to PDF 변환)
-  - **배포 환경**: Local Linux server, RDS, Docker, Docker Compose (AWS EC2, RDS, S3, Docker, Docker Compose)
-  - **기타**: WebSocket(실시간 알림), SignaturePad, List.js, Sortable.js, OpenAI GPT API 연동
+  - **배포 환경**: Ubuntu, Docker, Docker Compose, Jenkins
+      (아마존 사용시 : AWS EC2, RDS, S3, Docker, Docker Compose, Jenkins)
+  - **기타**: WebSocket(실시간 알림), Puppeteer(HTML → PDF 변환), SignaturePad, List.js, OpenAI GPT API 연동
 
 - 핵심 기능 :
-  - 순차 결재 시스템 구현 (결재자/합의자/참조자) + 파일 첨부 및 서명 기능 포함
-  - 결재 상태에 따른 WebSocket 실시간 알림 기능 구현
-  - 결재 문서 HTML → PDF 변환 기능 구현 (Puppeteer 활용)
-  - 연차 결재 승인 시 연차 내역 및 캘린더 자동 반영
-  - 조직도 트리 구조 구현(선택 항목 실시간 시각화) + 프로필 카드 출력
-  - 부서/팀 순서 변경 기능 (Sortable.js 적용)
-  - 협력업체 주소록 관리 기능 (목록 조회 + 인원 등록)
-  - OpenAI GPT API 기반 챗봇 기능 구현
-* 주요 코드 : 
+  - 결재 시스템
+    - 결재 상태 관리 (승인, 진행, 반려, 회수)
+    - 서명(SignaturePad) 기능
+    - 트리 구조 기반 결재자 정보 관리
+    - 파일 첨부 기능 (문서, 이미지 등 업로드/다운로드)
+    - WebSocket을 활용한 실시간 결재 알림 기능
+    - Puppeteer를 이용한 결재 문서 PDF 출력 (HTML → PDF 변환)
+    - 연차 신청 결재 승인 시 연차 이력 및 캘린더에 자동 반영
+    - 재기안 기능
+  - 조직도 및 주소록 기능
+    - 트리 구조 및 드롭다운을 통한 사원 목록 조회
+    - 관리자 부서/팀 관리
+    - 프로필 카드
+    - 협력업체 주소록 관리
+  - GPT 챗봇 기능
+    - OpenAI GPT API 기반 챗봇 기능
+
 
 ## 자격
 * 정보처리 기사(필기합격)
