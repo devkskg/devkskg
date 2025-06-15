@@ -41,7 +41,6 @@
   - **Database**: MariaDB
   - **Authentication**: Spring Security 암호화
   - **배포 환경**: Ubuntu, Docker, Docker Compose, Jenkins
-      (아마존 사용시 : AWS EC2, RDS, S3, Docker, Docker Compose, Jenkins)
   - **기타**: WebSocket(실시간 알림), Puppeteer(HTML → PDF 변환), SignaturePad, List.js, OpenAI GPT API 연동
 
 - 핵심 기능 :
